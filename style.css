@@ -231,7 +231,8 @@ color: white;
     padding: 0.5rem;
 }
 
-.taskNav li{
+.taskNav li a{
+    text-decoration: none;
 font-family: var(--primary-font);
 color: white;
 font-weight: bold;
@@ -239,6 +240,13 @@ font-weight: bold;
 
 .taskNav ul li:first-child{
     margin-right: auto;
+    font-size: var(--fs-m);
+}
+
+.taskNav ul li:nth-child(2){
+    background-color: var(--transparent-color);
+    padding: 0.5rem;
+    border-radius: 0.3rem;
 }
 
 /*Text*/

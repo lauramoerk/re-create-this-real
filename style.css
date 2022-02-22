@@ -5,6 +5,7 @@
     --bg-color:#d95450;
     --transparent-color:#DD6662;
     --hover-color:#bc5753;
+    --bg-contrast: #c74E49;
 
 
     --primary-font: 'houschka-rounded', sans-serif;
@@ -116,7 +117,6 @@ header ul{
 
 .timerLink:hover{
     background-color: var(--hover-color);
-    padding: 0.7rem;
     border-radius: 0.3rem;
 }
 
@@ -201,7 +201,7 @@ header ul{
 .taskBox button{
     padding: 1rem;
 width: 100%;
-background-color: var(--hover-color);
+background-color: var(--bg-contrast);
 border: 3px dashed var(--transparent-color);
 border-radius: 0.5rem;
 height: 4rem;
@@ -209,9 +209,9 @@ height: 4rem;
 
 .taskBox button{
     font-family: var(--primary-font);
-    font-size: var(--fs-m);
+    font-size: #efc3c2;
     font-weight: bold;
-    color: var(--transparent-color);
+    color: #EBEBEB;
 }
 
 /*Endorsing Text*/
@@ -252,7 +252,7 @@ font-family: var(--secondary-font);
     text-decoration: none;
 font-family: var(--primary-font);
 color: white;
-font-weight: bold;
+font-weight: 600;
 }
 
 .taskNav ul li:first-child{

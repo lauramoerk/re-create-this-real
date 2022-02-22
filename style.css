@@ -87,9 +87,12 @@ header ul{
     text-decoration: none;
     font-family:var(--primary-font);
     font-weight: bold;
-    font-size: 1rem;
+    font-size: var(--fs-m);
     color: white;
     opacity: 100%; 
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 .aLink{
     text-decoration: none;
@@ -275,6 +278,12 @@ font-family: var(--secondary-font);
     color: grey;
 }
 
+.theOnewithTheCat .taskButton:hover,
+.theOnewithTheCat .taskButton2:hover{
+cursor: pointer;
+}
+
+
 .theOnewithTheCat .taskButton{
     border: none;
     background-color: white;
@@ -362,6 +371,7 @@ font-weight: 600;
 
 .textContainer{
     grid-column: 2;
+    padding: 1rem 3rem 1rem 3rem;
 }
 
 .textContainer h1{

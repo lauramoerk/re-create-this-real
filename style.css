@@ -215,10 +215,27 @@ height: 4rem;
 }
 
 /*Endorsing Text*/
+
 .endorsingText h4,
 .endorsingText h5{
 text-align: center;
-color: white;
+font-family: var(--secondary-font);
+}
+
+.endorsingText h4{
+    font-size: var(--fs-s);
+    padding: 1rem;
+    margin: 0;
+    color: #EBEBEB;
+    font-weight: lighter;
+}
+
+.endorsingText h5{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+    color: white;
 }
 
 /*Add Task List*/

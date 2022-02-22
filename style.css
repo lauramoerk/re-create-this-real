@@ -1,15 +1,19 @@
 @import url("https://use.typekit.net/sfd8pac.css");
-
+@import url("https://use.typekit.net/sfd8pac.css");
 :root{
 
     --bg-color:#d95450;
     --transparent-color:#DD6662;
     --hover-color:#bc5753;
     --bg-contrast: #c74E49;
+    --textcontainer-font-color: #5B2528;
+    --text-containter-fc: #6B5A5B;
 
 
     --primary-font: 'houschka-rounded', sans-serif;
     --secondary-font: Arial, sans-serif;
+    --ter-font: 'unit-rounded', sans-serif;
+
 
     --fs-xs: 0.8rem;
     --fs-s: 1rem;
@@ -28,12 +32,16 @@ body{
     margin: 0;
 }
 
+
 .firstdiv{
     display: grid;
     grid-template-columns: 1fr 40% 1fr;
-    grid-template-rows: 10vh 90vh;
+    grid-template-rows: 10vh 90vh 1fr 1fr;
     background-color: var(--bg-color);
 }
+
+
+
 
 .redBackground, header, 
 .timerContainer{
@@ -269,6 +277,90 @@ font-weight: 600;
 /*Text*/
 
 .seconddiv{
+    display: grid;
     grid-template-columns: 1fr 40% 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 10vh;
 }
+
+.textContainer{
+    grid-column: 2;
+}
+
+.textContainer h1{
+    font-family: var(--ter-font);
+    color: var(--textcontainer-font-color);
+    font-size: var(--fs-l);
+    letter-spacing: 0.01rem;
+}
+
+
+.textContainer h2{
+    font-family: var(--ter-font);
+    color: var(--textcontainer-font-color);
+    font-size: 1.8rem;
+    letter-spacing: 0.01rem;
+}
+
+.textContainer h2::after{
+    content: '';
+    display: block;
+    width: 24px;
+    padding-top: 8px;
+    border-bottom: 4px solid #f05b56;
+    opacity: 0.6;
+}
+
+.textContainer p{
+    font-family: var(--ter-font);
+    color: var(--text-containter-fc);
+    font-size: 1.2rem;
+}
+
+.textContainer p span{
+    color: #DD6662;
+    font-weight: bold;
+}
+
+/*List Styling*/
+.textContainer .discList li{
+    font-family: var(--ter-font);
+    color: var(--text-containter-fc);
+    font-size: var(--fs-s);
+    list-style-type: disc;
+}
+
+.textContainer .discList li::marker,
+.textContainer .discList2 li::marker{
+    color: #DD6662;
+
+}
+
+.textContainer .discList span{
+    font-weight: bold;
+}
+
+.textContainer .numberList span{
+    /*Color should be darker*/
+    font-weight: bold;
+}
+.textContainer ol li{
+    font-family: var(--ter-font);
+    color: var(--text-containter-fc);
+    font-size: var(--fs-s);
+}
+
+.discList2{
+    list-style-type: disc;
+}
+
+.discList2 .parentesis{
+    font-weight: lighter;
+}
+
+.discList2 a:link{
+    text-decoration: none;
+    color:#DD6662; ;
+    font-weight: bold;
+}
+
+

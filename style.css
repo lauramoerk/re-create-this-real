@@ -111,6 +111,7 @@ header ul{
 .timerUl ul {
     list-style: none;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     gap: 1rem;
 }
@@ -338,6 +339,7 @@ cursor: pointer;
     list-style: none;
     display: flex;
     justify-content: space-between;
+
     padding-bottom: 0.5rem;
     border-bottom: 3px solid white;
     padding: 0.5rem;
@@ -452,3 +454,174 @@ font-weight: 600;
 }
 
 
+@media screen and (max-width:1200px) {
+    .firstdiv{
+        display: grid;
+        grid-template-columns: 1fr 50% 1fr;
+        grid-template-rows: 1fr auto;
+        background-color: var(--bg-color);
+    }
+    
+
+}
+
+@media screen and (max-width:1100px) {
+    .firstdiv{
+        display: grid;
+        grid-template-columns: 1fr 50% 1fr;
+        grid-template-rows: 1fr auto;
+        background-color: var(--bg-color);
+    }
+    
+    .time h1{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width:950px) {
+.timerLink{
+    font-size: var(--fs-s);
+}
+
+.firstdiv{
+    display: grid;
+    grid-template-columns: 1fr 70% 1fr;
+    grid-template-rows: 1fr auto;
+    background-color: var(--bg-color);
+}
+
+.seconddiv{
+    display: grid;
+    grid-template-columns: 1fr 70% 1fr;}
+
+}
+
+@media screen and (max-width:950px){
+    .firstdiv{
+        display: grid;
+        grid-template-columns:  1fr 70% 1fr;
+        grid-template-rows: 1fr auto;
+        background-color: var(--bg-color);
+        padding: 0;
+    }
+
+
+    .seconddiv{
+        display: grid;
+        grid-template-columns: 1fr 70% 1fr;}
+
+    .timerLink{
+        font-size: var(--fs-s);
+    }
+
+    .timerBox{
+        padding: auto;
+    }
+       
+    .time h1{
+        font-size: 3rem;
+    }
+
+}
+
+
+@media screen and (max-width:650px){
+    .firstdiv{
+        display: grid;
+        grid-template-columns: 1fr 95% 1fr;
+        grid-template-rows: 1fr auto;
+        background-color: var(--bg-color);
+        padding: 0;
+    }
+    header nav ul{
+    gap: 0.5rem;
+    border-bottom: 2px solid var(--hover-color);
+    }
+
+.aLink{
+    font-size: var(--fs-xs);
+}
+
+.timerUl ul{
+    gap: 0.3rem;
+}
+
+    .timerLink{
+        font-size: var(--fs-xs);
+    }
+
+    .timerBox{
+        padding: 1rem;
+    }
+       
+    .time h1{
+        font-size: 2.3rem;
+    }
+
+    .seconddiv{
+        display: grid;
+        grid-template-columns: 1fr 95% 1fr;}
+
+        .textContainer h1{
+            font-size: 2rem;
+        }
+}
+
+@media screen and (max-width:450px){
+
+
+    .logo{
+        font-size: var(--fs-s);
+    }
+
+    header nav ul{
+        gap: 0.5rem;
+        border-bottom: 2px solid var(--hover-color);
+        justify-items: center;
+        align-items: center;
+
+        }
+
+    .aLink svg{
+      display: none;
+    }
+
+    .logo h4{
+        display:none;
+    }
+
+        .textContainer h1{
+            font-family: var(--ter-font);
+            color: var(--textcontainer-font-color);
+            font-size: var(--fs-m);
+            letter-spacing: 0.01rem;
+        }
+        
+        
+        .textContainer h2{
+            font-family: var(--ter-font);
+            color: var(--textcontainer-font-color);
+            font-size: 1.2rem;
+            letter-spacing: 0.01rem;
+        }
+
+        .textContainer p{
+            font-size: var(--fs-s);
+        }
+        .endorsingText h4 {
+            font-size: var(--fs-xs);
+        }
+
+.endorsingText h5{
+font-size: var(--fs-s);}
+
+.taskNav li a{
+    font-size: var(--fs-s);
+}
+
+.taskNav ul li:nth-child(2){
+    padding: 0.3rem;
+}
+
+
+}

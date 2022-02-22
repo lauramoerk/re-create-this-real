@@ -363,6 +363,32 @@ font-weight: 600;
     border-radius: 0.3rem;
 }
 
+
+.finishedTasks{
+    border-top: 0.5px solid white;
+    background-color: var(--transparent-color);
+    margin-bottom: 1rem;
+}
+
+.finishedTasks ul{
+    list-style:none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.finishedTasks ul li{
+    font-family: var(--primary-font);
+    color: white;
+    font-weight: bold;
+}
+
+.finishedTasks ul li span{
+    opacity: 0.5;
+    font-weight: normal;
+}
+
 /*Text*/
 
 .seconddiv{
@@ -423,6 +449,10 @@ font-weight: 600;
 .textContainer .discList2 li::marker{
     color: #DD6662;
 
+}
+
+.discList2Link{
+color: #DD6662;
 }
 
 .textContainer .discList span{
@@ -621,6 +651,14 @@ font-size: var(--fs-s);}
 
 .taskNav ul li:nth-child(2){
     padding: 0.3rem;
+}
+
+.finishedTasks ul li{
+font-size: var(--fs-s);
+}
+
+.finishedTasks ul li span{
+font-size: var(--fs-s);
 }
 
 
